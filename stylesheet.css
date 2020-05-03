@@ -1,0 +1,108 @@
+/* CSS for Module-2-Assignment  */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:#dbdbdb;
+}
+/* styling for main title */
+h2{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    text-transform: capitalize;
+}
+/* CSS for grandparent */
+.grand-parent{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    background-color: #0779e4;
+}
+/* CSS for individual parent */
+.parent{
+    width:30%;
+    margin-bottom: 21px;
+    background-color: #dbdbdb;
+    border: 20px solid rgb(221, 216, 216);
+    border-radius: 2px;
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-left: 2.5%;
+    float: left; 
+}
+/* CSS for subtitle */
+.child-1{
+    width: 100%;
+    height: 45px; 
+    position: relative;
+}
+.title{
+    position: absolute;
+    right: 0;
+    width: 39%;
+    height: 45px;
+    background-color:#30475e;
+    padding-top: 8px;
+    text-align: center;
+    border: 1px solid black;
+}
+h3{
+    font-size: 130%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+/* CSS for text */
+.child-2{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(92, 91, 91);
+}
+/* Responsive CSS for medium screen */
+@media (max-width: 991px){
+    .js-parent{
+        width: 94.5%;
+    }
+    .grand-parent{
+        display: inline-block;
+    }
+    .js-title{
+        width: 19.5%;
+    }
+    .html-parent,.css-parent{
+        width: 45.75%;
+        margin-bottom: 1px;
+    }
+}
+/*Responsive CSS for small screen */
+@media (max-width:767px){
+    .html-parent,.css-parent{
+        width: 94.5%;
+        margin-bottom: 1px !important
+    }
+    .title,.js-title{
+        width: 25%;
+    }
+}
+/*Responsive CSS for extra small screen */
+@media (max-width:470px){
+    h2{
+        font-size: 150%;
+    }
+    .title{
+        width: 33%;
+    }
+}
+@media (max-width:330px){
+    h2{
+        font-size: 100%;
+    }
+    .title{
+        width: 33%;
+    }
+}
